@@ -46,11 +46,7 @@ In the Azure portal...
 **Note:** After saving the document you will notice several fields have been automatically added by Cosmos DB. `_rid`, `_self`, `_etag`, `_attachments`, and `_ts`.
 You can read more about these tags [here](https://docs.microsoft.com/en-us/rest/api/cosmos-db/collections).
 
-## Exercise 2 - Create a blank ASP.NET Core MVC application
-In this exercise we will create a ASP.NET Core MVC application with controllers and views.
+## Exercise 2 - Write SQL queries to get below results:
+1. Get `AndersenFamily` data.
 
-You can refer ["Microsoft Docs - Get started with ASP.NET Core MVC"](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc) for this excercise.
 
-## Exercise 3 - Set up the ASP.NET Core MVC application
-
-### Steps
