@@ -146,11 +146,11 @@ You can read more about these tags [here](https://docs.microsoft.com/en-us/rest/
     }
    ]
    ```
-9. Return all childern with the grade more than 2.
+9. Return all childern with the grade greater than 2.
 
 10. Retun All the childern with the pets in below format.
    ```json
-  [
+   [
     {
         "familyName": "WakefieldFamily",
         "childName": "Jesse",
