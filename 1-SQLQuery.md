@@ -117,3 +117,49 @@ You can read more about these tags [here](https://docs.microsoft.com/en-us/rest/
       }
    ]
    ```
+8. Return Parent Child name in below format :
+   ```json
+   [
+    {
+        "Name": {
+            "ParentName": "Robin",
+            "ChildName": "Jesse"
+        }
+    },
+    {
+        "Name": {
+            "ParentName": "Ben",
+            "ChildName": "Jesse"
+        }
+    },
+    {
+        "Name": {
+            "ParentName": "Robin",
+            "ChildName": "Lisa"
+        }
+    },
+    {
+        "Name": {
+            "ParentName": "Ben",
+            "ChildName": "Lisa"
+        }
+    }
+   ]
+   ```
+9. Return all childern with the grade more than 2.
+
+10. Retun All the childern with the pets in below format.
+   ```json
+  [
+    {
+        "familyName": "WakefieldFamily",
+        "childName": "Jesse",
+        "petName": "Goofy"
+    },
+    {
+        "familyName": "WakefieldFamily",
+        "childName": "Jesse",
+        "petName": "Shadow"
+    }
+   ]
+   ```
