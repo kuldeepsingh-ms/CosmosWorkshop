@@ -68,5 +68,15 @@ You can read more about these tags [here](https://docs.microsoft.com/en-us/rest/
       }
     ]
     ```
+ 3. Get Given Names of all the childern in the family along with their gender.
 
-
+ 4. Get all the Zip codes in below format.
+     ```json
+    [
+        33011,
+        10453,
+        98033,
+        98033,
+        90210
+    ]
+    ```
