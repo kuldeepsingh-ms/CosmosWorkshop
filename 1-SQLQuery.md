@@ -10,25 +10,26 @@ You can refer ["Microsoft Docs - Create an Azure Cosmos account, container, and 
 In the Azure portal...
 1. Create an Azure Cosmos DB account. 
    * Click on **+ Create a resource** and search for `Azure Cosmos DB`. Click **Create**.
-   * Select below options while creating storage account
+   * Select below options while creating Cosmos DB account
        * *Resource Group:* **Create new**
          * *Name:* `az{your_id}-cosmosdb-rg`
        * *Account Name*: `az{your_id}-cosmosdb`
        * *API*: `Core (SQL)`
-       * *Apache Spark*: `None`
        * *Location*: `West Europe`
+       * *Capacity Mode*: `Provisioned throughput`
+       * *Account Type*: `Non-Production`
        * *Geo-Redundancy*: `Disabled`
        * *Multi-region Writes*: `Disabled`
     
-    **NOTE:** The database account will take approx. 10 minutes to be created.
+    **NOTE:** The database account will take approx. 5-10 minutes to be created.
 2. Create a database in the Cosmos DB account. In the CosmosDB's select **Data Explorer** to open the data explorer blade.
     * From the drop dwon at the top of the blade, select **New Database**
-    * *Database Id*: `ToDoList`
+    * *Database Id*: `DemoDatabase`
     * *Provision throughput*: `Enabled`
-    * *Throughput*: `400`
+    * *Throughput*: `400 (Manual)`
 3. Add a container. From the drop dwon at the top of the blade, select **New Container**
-    * *Database Id*: **Use Existing** `ToDoList`
-    * *Container Id*: `Items`
+    * *Database Id*: **Use Existing** `DemoDatabase`
+    * *Container Id*: `Families`
     * *Partition Key*: `/id`
 4. Add data to your container.
     * Select the `ToDoList` container created, and from the menu at the top of the blade click **New Item**.
