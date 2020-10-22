@@ -38,10 +38,10 @@ In the Azure portal...
     * Paste the copied json.
     * Click **Save**
 5. Repeat above step for below families data.
-    * [TheSmiths](./Data/TheSmiths.json).
-    * [TheAlexanders](./Data/TheAlexanders.json).
-    * [MeyerAndFamily](./Data/MeyerAndFamily.json).
-    * [AndersenFamily](./Data/AndersenFamily.json).
+    * [TheSmiths](./Data/TheSmiths.json)
+    * [TheAlexanders](./Data/TheAlexanders.json)
+    * [MeyerAndFamily](./Data/MeyerAndFamily.json)
+    * [AndersenFamily](./Data/AndersenFamily.json)
  
 **Note:** After saving the document you will notice several fields have been automatically added by Cosmos DB. `_rid`, `_self`, `_etag`, `_attachments`, and `_ts`.
 You can read more about these tags [here](https://docs.microsoft.com/en-us/rest/api/cosmos-db/collections).
@@ -163,3 +163,7 @@ You can read more about these tags [here](https://docs.microsoft.com/en-us/rest/
     }
    ]
    ```
+
+## Exercise 3 - Create an application using Cosmos DB SQL API
+1. Open Visual studio Code.
+2. From top Menu bar select `Terminal` and click on `New Terminal`.
