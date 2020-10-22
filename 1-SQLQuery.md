@@ -32,11 +32,12 @@ In the Azure portal...
     * *Container Id*: `Families`
     * *Partition Key*: `/id`
 4. Add data to your container.
+    * Copy the json snippet from [WakefieldFamily](./Data/WakefieldFamily.json).
     * Select the `Families` container created, Click on Items under `Families` node.
     * From the menu at the top of the blade click **New Item**.
-    * Paste the json snippet below, which represents a new item in our todo list.
+    * Paste the copied json.
     * Click **Save**
-5. Repeat above step for the remaining JSON files in the given folder. 
+5. Repeat above step for the remaining JSON files in the [Data](./Data) folder. 
  
 **Note:** After saving the document you will notice several fields have been automatically added by Cosmos DB. `_rid`, `_self`, `_etag`, `_attachments`, and `_ts`.
 You can read more about these tags [here](https://docs.microsoft.com/en-us/rest/api/cosmos-db/collections).
