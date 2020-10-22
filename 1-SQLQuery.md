@@ -47,8 +47,8 @@ In the Azure portal...
 You can read more about these tags [here](https://docs.microsoft.com/en-us/rest/api/cosmos-db/collections).
 
 ## Exercise 2 - Write SQL queries to get below results:
-1. Get `AndersenFamily` data.
-2. Get Family Name, City, County and State in below format.
+1. Return `AndersenFamily` data.
+2. Return Family Name, City, County and State in below format.
     ```json
     [
       {
@@ -68,9 +68,9 @@ You can read more about these tags [here](https://docs.microsoft.com/en-us/rest/
       }
     ]
     ```
- 3. Get Given Names of all the childern in the family along with their gender.
+ 3. Return Given Names of all the childern in the family along with their gender.
 
- 4. Get all the Zip codes in below format.
+ 4. Return all the Zip codes in below format.
      ```json
     [
         33011,
@@ -78,5 +78,28 @@ You can read more about these tags [here](https://docs.microsoft.com/en-us/rest/
         98033,
         98033,
         90210
+    ]
+    ```
+  5. Return the 2nd child from all the families.
+  
+  6. Return family name, address and zip in below format.
+     ```json
+    [
+      {
+          "Name": "WakefieldFamily",
+          "Address": {
+              "state": "FL",
+              "city": "Miami"
+          },
+          "zip": 33011
+      },
+      {
+          "Name": "TheSmiths",
+          "Address": {
+              "state": "NY",
+              "city": "The Bronx"
+          },
+          "zip": 10453
+      }
     ]
     ```
