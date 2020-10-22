@@ -233,7 +233,7 @@ You can read more about these tags [here](https://docs.microsoft.com/en-us/rest/
 
             private static async Task QueryItemsAsync(CosmosClient cosmosClient)
             {
-                var sqlQueryText = "SELECT * FROM c WHERE c.LastName = 'Andersen'";
+                var sqlQueryText = "SELECT * FROM c";
 
                 Console.WriteLine("Running query: {0}\n", sqlQueryText);
 
@@ -255,12 +255,22 @@ You can read more about these tags [here](https://docs.microsoft.com/en-us/rest/
         {
             [JsonPropertyName("id")]
             public string Id { get; set; }
+            [JsonPropertyName("lastName")]
             public string LastName { get; set; }
+            [JsonPropertyName("isRegistered")]
             public bool IsRegistered { get; set; }
             public override string ToString()
             {
                 return JsonSerializer.Serialize(this);
             }
         }
-    }   
+    }
    ```
+14. Run your project
+   ```
+   C:\Workshop2610\FamilyApp> dotnet run
+   ``` 
+15. Observe the response from Terminal screen.
+
+## Exercise 4 - Optional
+1. Update your application to execute the queries from Exercise 2.
