@@ -1,4 +1,5 @@
-# Workshop-CosmosDB
+# CosmosDB Workshop - Server side Programming
 
-## Exercise 1 - Create CosmosDB Account
-In this exercise we will use the Azure portal to create an Azure Cosmos DB SQL API account, create a document database and container and add data to the container.
+## Exercise 1 - Create User defiened Function
+Create a UDF which takes ZIP code as an input and return state name.
+
