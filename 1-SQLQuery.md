@@ -49,8 +49,8 @@ You can read more about these tags [here](https://docs.microsoft.com/en-us/rest/
 ## Exercise 2 - Write SQL queries to get below results:
 1. Return `AndersenFamily` data.
 2. Return Family Name, City, County and State in below format.
-    ```json
-    [
+   ```json
+   [
       {
           "Family": {
               "Name": "WakefieldFamily",
@@ -66,25 +66,25 @@ You can read more about these tags [here](https://docs.microsoft.com/en-us/rest/
               "County": "Bronx"
           }
       }
-    ]
-    ```
- 3. Return Given Names of all the childern in the family along with their gender.
+   ]
+   ```
+3. Return Given Names of all the childern in the family along with their gender.
 
- 4. Return all the Zip codes in below format.
-     ```json
-    [
+4. Return all the Zip codes in below format.
+   ```json
+   [
         33011,
         10453,
         98033,
         98033,
         90210
-    ]
-    ```
-  5. Return the 2nd child from all the families.
+   ]
+   ```
+5. Return the 2nd child from all the families.
   
-  6. Return family name, address and zip in below format.
-     ```json
-    [
+6. Return family name, address and zip in below format.
+   ```json
+   [
       {
           "Name": "WakefieldFamily",
           "Address": {
@@ -101,5 +101,19 @@ You can read more about these tags [here](https://docs.microsoft.com/en-us/rest/
           },
           "zip": 10453
       }
-    ]
-    ```
+   ]
+   ```
+
+7. Check if the family is from CA state and return the result in below format.
+   ```json
+   [
+      {
+          "id": "WakefieldFamily",
+          "IsFromCAState": false
+      },
+      {
+          "id": "TheSmiths",
+          "IsFromCAState": true
+      }
+   ]
+   ```
