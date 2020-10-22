@@ -51,22 +51,22 @@ You can read more about these tags [here](https://docs.microsoft.com/en-us/rest/
 2. Get Family Name, City, County and State in below format.
     ```json
     [
-    {
-        "Family": {
-            "Name": "WakefieldFamily",
-            "City": "Miami",
-            "State": "FL"
-        }
-    },
-    {
-        "Family": {
-            "Name": "TheSmiths",
-            "City": "The Bronx",
-            "State": "NY",
-            "County": "Bronx"
-        }
-    },
-    ....
+      {
+          "Family": {
+              "Name": "WakefieldFamily",
+              "City": "Miami",
+              "State": "FL"
+          }
+      },
+      {
+          "Family": {
+              "Name": "TheSmiths",
+              "City": "The Bronx",
+              "State": "NY",
+              "County": "Bronx"
+          }
+      }
+    ]
     ```
 
 
