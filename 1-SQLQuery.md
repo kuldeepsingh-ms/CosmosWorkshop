@@ -167,3 +167,42 @@ You can read more about these tags [here](https://docs.microsoft.com/en-us/rest/
 ## Exercise 3 - Create an application using Cosmos DB SQL API
 1. Open Visual studio Code.
 2. From top Menu bar select `Terminal` and click on `New Terminal`.
+3. From `Terminal` window navigate to your working directory.
+   ```
+   cd C:
+   ```
+4. Create a new folder for your application
+   ```
+   C:\> mkdir Workshop2610
+   C:\> cd Workshop2610
+   C:\Workshop2610>
+   ```
+5. Create new console application.
+   ```
+   C:\Workshop2610> dotnet new console -n FamilyApp
+   ```
+6. Navigate to the project folder
+   ```
+   C:\Workshop2610> cd FamilyApp
+   C:\Workshop2610\FamilyApp>
+   ```
+7. Build project
+   ```
+   C:\Workshop2610\FamilyApp> dotnet build
+   ```
+8. From top Menu bar select `File` and click on `Open Folder`. Navigate to C:\Workshop2610\FamilyApp and click `Select Folder` from dialog box.
+
+9. From top Menu bar select `Terminal` and click on `New Terminal`.
+
+10. Make sure that you are at Project directory
+   ```
+   C:\Workshop2610\FamilyApp>
+   ```
+11. Install Cosmos DB package.
+   ```
+   C:\Workshop2610\FamilyApp> dotnet add package Azure.Cosmos --version 4.0.0-preview3
+   ```
+12. Build project
+   ```
+   C:\Workshop2610\FamilyApp> dotnet build
+   ``` 
