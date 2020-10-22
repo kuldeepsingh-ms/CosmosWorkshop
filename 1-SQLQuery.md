@@ -206,3 +206,61 @@ You can read more about these tags [here](https://docs.microsoft.com/en-us/rest/
    ```
    C:\Workshop2610\FamilyApp> dotnet build
    ``` 
+13. Write below code in `Program.cs`
+   ```
+    using System;
+    using System.Collections.Generic;
+    using System.Net;
+    using System.Threading.Tasks;
+    using Azure.Cosmos;
+    using System.Text.Json;
+    using System.Text.Json.Serialization;
+
+    namespace FamilyApp
+    {
+        class Program
+        {
+            private const string EndpointUrl = "https://<your-account>.documents.azure.com:443/";
+            private const string AuthorizationKey = "<your-account-key>";
+            private const string DatabaseId = "DemoDatabase";
+            private const string ContainerId = "Families";
+
+            static async Task Main(string[] args)
+            {
+                CosmosClient cosmosClient = new CosmosClient(EndpointUrl, AuthorizationKey);
+                await Program.QueryItemsAsync(cosmosClient);
+            }
+
+            private static async Task QueryItemsAsync(CosmosClient cosmosClient)
+            {
+                var sqlQueryText = "SELECT * FROM c WHERE c.LastName = 'Andersen'";
+
+                Console.WriteLine("Running query: {0}\n", sqlQueryText);
+
+                CosmosContainer container = cosmosClient.GetContainer(Program.DatabaseId, Program.ContainerId);
+
+                QueryDefinition queryDefinition = new QueryDefinition(sqlQueryText);
+
+                List<Family> families = new List<Family>();
+
+                await foreach (Family family in container.GetItemQueryIterator<Family>(queryDefinition))
+                {
+                    families.Add(family);
+                    Console.WriteLine("\tRead {0}\n", family);
+                }
+            }
+        }
+
+        public class Family
+        {
+            [JsonPropertyName("id")]
+            public string Id { get; set; }
+            public string LastName { get; set; }
+            public bool IsRegistered { get; set; }
+            public override string ToString()
+            {
+                return JsonSerializer.Serialize(this);
+            }
+        }
+    }   
+   ```
