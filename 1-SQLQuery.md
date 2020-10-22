@@ -37,7 +37,11 @@ In the Azure portal...
     * From the menu at the top of the blade click **New Item**.
     * Paste the copied json.
     * Click **Save**
-5. Repeat above step for the remaining JSON files in the [Data](./Data) folder. 
+5. Repeat above step for below families data.
+    * [TheSmiths](./Data/TheSmiths.json).
+    * [TheAlexanders](./Data/TheAlexanders.json).
+    * [MeyerAndFamily](./Data/MeyerAndFamily.json).
+    * [AndersenFamily](./Data/AndersenFamily.json).
  
 **Note:** After saving the document you will notice several fields have been automatically added by Cosmos DB. `_rid`, `_self`, `_etag`, `_attachments`, and `_ts`.
 You can read more about these tags [here](https://docs.microsoft.com/en-us/rest/api/cosmos-db/collections).
