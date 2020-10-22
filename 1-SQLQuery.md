@@ -32,19 +32,12 @@ In the Azure portal...
     * *Container Id*: `Families`
     * *Partition Key*: `/id`
 4. Add data to your container.
-    * Select the `ToDoList` container created, and from the menu at the top of the blade click **New Item**.
+    * Select the `Families` container created, Click on Items under `Families` node.
+    * From the menu at the top of the blade click **New Item**.
     * Paste the json snippet below, which represents a new item in our todo list.
-    ```json
-    {
-        "id": "BD739417-E69A-41FB-BF7C-7C4D7D487B28",
-        "category": "personal",
-        "name": "groceries",
-        "description": "Pick up apples and strawberries.",
-        "isComplete": false
-    }
-    ```
     * Click **Save**
-    
+5. Repeat above step for the remaining JSON files in the given folder. 
+ 
 **Note:** After saving the document you will notice several fields have been automatically added by Cosmos DB. `_rid`, `_self`, `_etag`, `_attachments`, and `_ts`.
 You can read more about these tags [here](https://docs.microsoft.com/en-us/rest/api/cosmos-db/collections).
 
