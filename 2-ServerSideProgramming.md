@@ -14,3 +14,13 @@
 
 4. Write SQL query using above UDF which returns families with names ending with 'Family'.
   * Query should return the data for WakefieldFamily, MeyerAndFamily and AndersenFamily.
+
+## Exercise 2 - Create Stored Procedure
+1. Create a Stored Procedure to insert record in Families collection (considering one item as an input).
+  * Hint: collection.createDocument(collectionLink, item, options);
+2. Call above stored procedure from .net application
+  * Hint: container.Scripts.ExecuteStoredProcedureAsync<string>("<procedureName>", new PartitionKey(partitionkey), new[] { newItems });
+ 
+ ## Exercise 3 - Optional
+ 1. Update stored procedure to create multiple family documents in one call.
+ 2. Call updated stored procedure from .net application.
