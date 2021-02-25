@@ -165,7 +165,7 @@ You can read more about these tags [here](https://docs.microsoft.com/en-us/rest/
    ```
 
 ## Exercise 3 - Create an application using Cosmos DB SQL API
-1. Open Visual studio Code.
+1. Open [Visual studio Code](https://code.visualstudio.com/Download).
 2. From top Menu bar select `Terminal` and click on `New Terminal`.
 3. From `Terminal` window navigate to your working directory.
    ```
